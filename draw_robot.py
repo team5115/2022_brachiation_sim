@@ -42,10 +42,18 @@ def draw_robot(robot_data,field_data):
         v_dc=robot_data["v_dc"]
         v_bd=robot_data["v_bd"]
 
-        w=robot_data["w"]
-        L_ac=robot_data["L_ac"]
-        L_bd=robot_data["L_bd"]
-        alpha_bd_deg=robot_data["alpha_bd_deg"]
+
+        w=ll_cd.length();
+        L_ac=ll_ac.length()
+        L_bd=ll_bd.length()
+
+        tilt_angle=vec2d.angle_between_vectors_degrees(v_dc,vec2d.v_right)
+  
+        #tilt_angle=L_bd=ll_bd.length()
+        # w=robot_data["w"]
+        # L_ac=robot_data["L_ac"]
+        # L_bd=robot_data["L_bd"]
+        #alpha_bd_deg=robot_data["alpha_bd_deg"]
         
         # theta_deg1=vec2d.angle_between_vectors_degrees(v_ac,v_dc)
         # theta_deg2=vec2d.angle_between_vectors_degrees(v_dc,v_bd)
@@ -103,7 +111,8 @@ def draw_robot(robot_data,field_data):
                         #print(f"value={value}")
                         plotting_utils2.plot_shapely_object(ax1, P_rung_top, 'black', 'O')
                 
-                title_str = f"w={w:1.2f} L_ac={L_ac:1.2f} L_bd={L_bd:1.2f} alpha_bd={alpha_bd_deg:1.2f}"
+                #title_str = f"w={w:1.2f} L_ac={L_ac:1.2f} L_bd={L_bd:1.2f} alpha_bd={alpha_bd_deg:1.2f}"
+                title_str = f"w={w:1.2f} L_ac={L_ac:1.2f} L_bd={L_bd:1.2f} tilt_angle={tilt_angle:1.2f}"
                 plt.title(title_str)
 
                 #axes.get_ylim()
