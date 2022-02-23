@@ -6,7 +6,7 @@ ft_=u.imperial.ft
 in_=u.imperial.inch
 
 
-robot_width=3*ft_
+robot_width=1.75*ft_
 robot_min_arm_length=2*ft_
 robot_max_arm_length=7*ft_
 

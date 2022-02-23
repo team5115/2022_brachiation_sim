@@ -6,7 +6,7 @@ from comp_geo import point_utils
 from comp_geo.list_line import ListLine as ListLine
 
 
-def calculate_robot_hanging_from_arm_a(P_a, P_b,L_ac,L_bd, w, d):
+def calculate_robot_hanging_from_arm_a(P_a, P_b,L_ac,L_bd, w):
         """
                B
                 \    
@@ -17,6 +17,7 @@ def calculate_robot_hanging_from_arm_a(P_a, P_b,L_ac,L_bd, w, d):
             C 
         """
 
+        d=w/2
         #theta_ac_rad=math.atan2(d,L_ac)
         theta_ac_rad=math.atan2(d,L_ac)        
         theta_ac_deg=math.degrees(theta_ac_rad)
@@ -61,7 +62,7 @@ def calculate_robot_hanging_from_arm_a(P_a, P_b,L_ac,L_bd, w, d):
 
         return data
 
-def calculate_robot_hanging_from_arm_b(P_a, P_b, L_ac,L_bd, w, d):
+def calculate_robot_hanging_from_arm_b(P_a, P_b, L_ac,L_bd, w):
         """
                B
                 \    
@@ -72,7 +73,7 @@ def calculate_robot_hanging_from_arm_b(P_a, P_b, L_ac,L_bd, w, d):
             C 
 
         """
-
+        d=w/2
         #theta_ac_rad=math.atan2(d,L_ac)
         theta_bd_rad=math.atan2(d,L_bd)
         
