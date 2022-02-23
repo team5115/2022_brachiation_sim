@@ -10,26 +10,9 @@ import numpy as np
 import matplotlib.pyplot as plt
 import copy
 import sys
-#import config_params
+
 from comp_geo import *
-from comp_geo import geometry_utils
-from comp_geo import point_utils
-from comp_geo import linestring_utils
-import shapely
-from comp_geo import intersection_utils
-from comp_geo import polygon_utils
-from shapely.geometry import Point
-from shapely.geometry import LineString
-from shapely.geometry import Polygon
-from shapely.geometry import MultiPolygon
-from shapely.ops import nearest_points
-from shapely.geometry import MultiPoint
-# mp = MultiPoint(route)
-# print nearest_points(mp, end)[0]
-#import plotting_utils2
-#import chamfer_utils
-from csd import pandas_conversion_utils
-#import shapely_utils
+
 import inspect
 from csd import arrow_plotting_utils
 #import figure_utils

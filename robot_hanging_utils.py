@@ -1,24 +1,10 @@
-# mp = MultiPoint(route)
-# print nearest_points(mp, end)[0]
+
 import math
-import numpy as np
-import matplotlib.pyplot as plt
-import pandas as pd
 
-from shapely.geometry import Point
-from shapely.geometry import Polygon
-from shapely.geometry import LineString
-from shapely.geometry import MultiLineString
-from shapely.geometry import GeometryCollection
-from shapely.geometry import MultiPolygon
-
-import comp_geo.vec2d as vec2d 
-from comp_geo import list_line
+import comp_geo.vec2d as vec2d
 from comp_geo import point_utils
 from comp_geo.list_line import ListLine as ListLine
 
-from csd import arrow_plotting_utils
-from comp_geo import plotting_utils2 
 
 def calculate_robot_hanging_from_arm_b(P_b,L_ac,L_bd, w, d):
         """

@@ -1,13 +1,4 @@
-import astropy
 from astropy import units as u
-from astropy.table import QTable, Table, Column
-
-from shapely.geometry import Point
-from shapely.geometry import Polygon
-from shapely.geometry import LineString
-from shapely.geometry import MultiLineString
-from shapely.geometry import GeometryCollection
-from shapely.geometry import MultiPolygon
 
 from unit_utils import convert_to_target_units
 

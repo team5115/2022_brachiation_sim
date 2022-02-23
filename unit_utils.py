@@ -1,7 +1,4 @@
-import astropy
 from astropy import units as u
-from astropy.table import QTable, Table, Column
-
 
 
 def convert_to_target_units(x,target_units=u.imperial.ft):
