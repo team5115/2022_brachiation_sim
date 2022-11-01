@@ -34,7 +34,9 @@ for i, L_bd in enumerate(L_bd_values):
         
 
         
-        robot_data=robot_hanging_utils.calculate_robot_hanging_from_arm_b(P_b,L_ac,L_bd, w, d)
+        #robot_data=robot_hanging_utils.calculate_robot_hanging_from_arm_b(P_b,L_ac,L_bd, w, d)
+
+        robot_data=robot_hanging_utils.calculate_robot_hanging_from_arm_a(P_b,L_ac,L_bd, w, d)
 
         field_data=field_constants.rung_top_points
         
